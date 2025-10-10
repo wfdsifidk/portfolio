@@ -10,6 +10,7 @@
     <script src="script.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Mitr:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
     <meta charset="UTF-8">
@@ -17,39 +18,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
+<body class="dark-theme">
     <div class="header">
         <div class="logo">
-           <h1 class="logo_text">ItMark</h1>
+           <h1 class="logo_text">Mark</h1>
         </div>
     </div>
-    <div class="introducing_block">
+    <div class="introducing_block" id="about">
         <div class="photo_block">
-            <div class="film-overlay"></div>
-            <img class="introducing_block_photo" src="images/2025-03-10 10.55.00.jpg" alt="">
+          <img class="introducing_block_photo" src="images/pykaso-output-1760096880970.png" alt="Mark photo">
         </div>
         <div class="about_block">
-            <div class="about_heading">This is me</div>
-            <div class="paragraph">Hi, I'm Mark, a web developer with over 3 years of experience in building functional, aesthetically pleasing and user-friendly web applications and websites. My passion is making the internet a better place, one project at a time.
-
-                How I can help:
-                
-                Frontend Development: I develop dynamic and responsive user interfaces using cutting edge technologies such as HTML5, CSS3, JavaScript (ES6+). My goal is to provide the most positive experience possible for website visitors.
+            <div class="about_text">
+              <div class="about_heading">Who I Am</div>
+              <div class="paragraph">
+                Hi, I’m Mark — a web developer, content creator and freelance assistant with a logical mind and a passion for structure.
+          
+                Besides coding websites, I also help people write:
+                • Essays (academic & personal)
+                • Motivation letters
+                • CVs & LinkedIn bios
+                • Website & business copy
+              </div>
             </div>
+            <div class="about_contact">
+              <h3 class="contact_heading">Contact</h3>
+              <p>📬 <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+              <p>💼 <a href="https://linkedin.com/in/your-link" target="_blank">LinkedIn Profile</a></p>
+              <p>📱 <a href="https://t.me/yourusername" target="_blank">@yourusername (Telegram)</a></p>
+            </div>
+          </div>
+      </div>
+      <section class="services_block" id="services">
+        <h2 class="section_heading">What I Can Help You With</h2>
+        <div class="services_grid">
+          <div class="service_card">📄 Essay Writing</div>
+          <div class="service_card">📬 Motivation Letters</div>
+          <div class="service_card">⌨️ Website developing</div>
+          <div class="service_card">📊 Slide Decks & Presentations</div>
+          <div class="service_card">👨‍💼 CVs & LinkedIn Profiles</div>
+          <div class="service_card">🌐 Web & Product Copy</div>
         </div>
-    </div>
+      </section>
     
     <div class="portfolio_block">
         <h1 class="portfolio_block_heading">My Works</h1>
         <div class="container">
             <div class="work">
-                <a href="http://www.inache.lv"><p class="work_desc">INACHE (Real-Estate agency) ↗</p></a>
+                <a href="https://www.inache.lv"><p class="work_desc">INACHE (Real-Estate agency) ↗</p></a>
                 <div class="border_title"></div>
                 <div class="glide" id="glide1">
                     <div class="glide__track" data-glide-el="track">
                         <ul class="glide__slides">
-                            <li class="glide__slide"><img src="images/Screenshot 2024-07-07 at 18.17.00.png" alt=""></li>
-                            <li class="glide__slide"><img src="images/Screenshot 2024-07-07 at 18.17.16.png" alt=""></li>
+                            <li class="glide__slide"><img src="images/screely-1760087377485.png" alt=""></li>
+                            <li class="glide__slide"><img src="images/screely-1760087289348.png" alt=""></li>
                             <!-- Добавьте нужное количество слайдов -->
                         </ul>
                     </div>
@@ -60,13 +82,13 @@
                 </div>
             </div>
             <div class="work">
-                <a href="http://www.conti.lv"><p class="work_desc">ABC-CONTI ↗</p></a>
+                <a href="https://www.conti.lv"><p class="work_desc">ABC-CONTI ↗</p></a>
                 <div class="border_titleconti"></div>
                 <div class="glide" id="glide2">
                     <div class="glide__track" data-glide-el="track">
                         <ul class="glide__slides">
-                            <li class="glide__slide"><img src="images/Screenshot 2024-07-07 at 18.08.27.png" alt=""></li>
-                            <li class="glide__slide"><img src="images/Screenshot 2024-07-07 at 18.08.37.png" alt=""></li>
+                            <li class="glide__slide"><img src="images/screely-1760087136720.png" alt=""></li>
+                            <li class="glide__slide"><img src="images/screely-1760087070743.png" alt=""></li>
                             <!-- Добавьте нужное количество слайдов -->
                         </ul>
                     </div>
@@ -77,13 +99,31 @@
                 </div>
             </div>
             <div class="work">
-                <a href="http://www.polanta.lv"><p class="work_desc">POLANTA SIA ↗</p></a>
+                <a href="https://www.polanta.lv"><p class="work_desc">POLANTA SIA ↗</p></a>
                 <div class="border_titlepolanta"></div>
                 <div class="glide" id="glide3">
                     <div class="glide__track" data-glide-el="track">
                         <ul class="glide__slides">
-                            <li class="glide__slide"><img src="images/Screenshot 2024-07-07 at 18.25.37.png" alt=""></li>
-                            <li class="glide__slide"><img src="images/Screenshot 2024-07-07 at 18.25.47.png" alt=""></li>
+                            <li class="glide__slide"><img src="images/screely-1760086871490.png" alt=""></li>
+                            <li class="glide__slide"><img src="images/screely-1760086923330.png" alt=""></li>
+                            <!-- Добавьте нужное количество слайдов -->
+                        </ul>
+                    </div>
+                    <div class="glide__arrows" data-glide-el="controls">
+                        <button class="glide__arrow glide__arrow--left" data-glide-dir="<">◀</button>
+                        <button class="glide__arrow glide__arrow--right" data-glide-dir=">">▶</button>
+                    </div>
+                </div>
+            </div>
+            <div class="work">
+                <a href="https://www.finsrilanka.com"><p class="work_desc">FinSriLanka ↗</p></a>
+                <div class="border_titlepolanta"></div>
+                <div class="glide" id="glide4">
+                    <div class="glide__track" data-glide-el="track">
+                        <ul class="glide__slides">
+                            <li class="glide__slide"><img src="images/screely-1760086469956.png" alt=""></li>
+                            <li class="glide__slide"><img src="images/screely-1760086411241.png" alt=""></li>
+                            <li class="glide__slide"><img src="images/screely-1760086228397.png" alt=""></li>
                             <!-- Добавьте нужное количество слайдов -->
                         </ul>
                     </div>
